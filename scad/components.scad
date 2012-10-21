@@ -1,83 +1,62 @@
 include <hardware_dims.scad>
 include <polyholes.scad>
 include <constants.scad>
+include <functions.scad>
 
 $fn = 21;
 //make the local screw array a function
 
 
 module nut(type){
-	lscrew_array = get_screw_dims(type);
+	a = get_screw_dims(type);
 
-	lscrew_diameter = lscrew_array[0];
-	lnut_diameter = lscrew_array[3] / cos(30);
-	lnut_height = lscrew_array[5];
 	difference(type){
 		union(){
-			color("silver")cylinder(r = lnut_diameter/2, h = lnut_height, $fn = 6);
+			color("silver")cylinder(r = a[NUT_WIDTH]/cos(30)/2, h = a[NUT_HEIGHT], $fn = 6);
 		}
-		color("silver")translate([0,0,-eta])cylinder(r = lscrew_diameter/2, h = lnut_height + eta*2);
+		color("silver")translate([0,0,-eta])cylinder(r = a[DIAMETER]/2, h = a[NUT_HEIGHT] + eta * 2);
 	}
 	echo(str("--", type," nut")); 
 }
 
 module lock_nut(type){
-	lscrew_array = get_screw_dims(type);
-
-	lscrew_diameter = lscrew_array[0];
-	lnut_diameter = lscrew_array[3] / cos(30);
-	lnut_apothem = lscrew_array[3] / 2;
-	llock_nut_height = lscrew_array[4];
+	a = get_screw_dims(type);
 
 	difference(){
 		union(){
-			color("silver")cylinder(r = lnut_diameter/2, h = llock_nut_height-lnut_apothem/2, $fn = 6);
-			color("silver")translate([0,0,llock_nut_height-lnut_apothem/2])
-				rotate_extrude(convexity = 10)translate([lnut_apothem/2,0,0])circle(r = lnut_apothem/2);
+			color("silver")cylinder(r = a[NUT_WIDTH]/cos(30)/2, h = a[LOCK_NUT_HEIGHT]-a[NUT_WIDTH]/4, $fn = 6);
+			color("silver")translate([0,0,a[LOCK_NUT_HEIGHT]-a[NUT_WIDTH]/4])
+				rotate_extrude(convexity = 10)translate([a[NUT_WIDTH]/4,0,0])circle(r = a[NUT_WIDTH]/4);
 		}
-		color("silver")translate([0,0,-eta])cylinder(r=lscrew_diameter/2, h = llock_nut_height + eta*2);
+		color("silver")translate([0,0,-eta])cylinder(r=a[DIAMETER]/2, h = a[LOCK_NUT_HEIGHT] + eta*2);
 	}
 	echo(str("--", type," lock nut")); 
 }
 
 module stepper(type){
-	lstepper_array = get_stepper_dims(type);
-	lstepper_width = lstepper_array[0];
-	lstepper_length = lstepper_array[1];
-	lstepper_hole_spacing = lstepper_array[2];
-	lstepper_hole_diameter = lstepper_array[3];
-	lstepper_flange_diameter = lstepper_array[4];
-	lstepper_flange_height = lstepper_array[5];
-	lstepper_shaft_length = lstepper_array[6];
-	lstepper_shaft_diameter = lstepper_array[7];
-	lstepper_hole_engagement = lstepper_hole_diameter *1.5;
+	a = get_stepper_dims(type);
 
 		union(){
-			color("grey")translate([0,0,lstepper_length/2])cube([lstepper_width, lstepper_width, lstepper_length], center = true);
-			color("grey")translate([0,0,lstepper_length])cylinder(r=lstepper_flange_diameter/2, h = lstepper_flange_height);
-			color("silver")translate([0,0,lstepper_length+lstepper_flange_height])cylinder(r=lstepper_shaft_diameter/2, h = lstepper_shaft_length);
+			color("grey")translate([0,0,a[LENGTH]/2])cube([a[WIDTH], a[WIDTH], a[LENGTH]], center = true);
+			color("grey")translate([0,0,a[LENGTH]])cylinder(r=a[FLANGE_DIAMETER]/2, h = a[FLANGE_HEIGHT]);
+			color("silver")translate([0,0,a[LENGTH]+a[FLANGE_HEIGHT]])cylinder(r=a[SHAFT_DIAMETER]/2, h = a[SHAFT_LENGTH]);
 		}
 	echo(str("--", type," stepper")); 
 }
 
-module screw(length, type){
-	lscrew_array = get_screw_dims(type);
-
-	lscrew_diameter = lscrew_array[0];
-	lscrew_head_height = lscrew_array[1];
-	lscrew_head_diameter = lscrew_array[2];
-	
+module cap_screw(length, type){
+	a = get_screw_dims(type);
 
 	difference(){
 		union(){
-			color("grey")translate([0,0,-lscrew_head_height])color("black")
-				cylinder(r = lscrew_head_diameter/2, h = lscrew_head_height);
-			color("grey")cylinder(r = lscrew_diameter/2, h = round(length));
+			color("grey")translate([0,0,-a[CAP_HEAD_HEIGHT]])
+				cylinder(r = a[CAP_HEAD_DIAMETER]/2, h = a[CAP_HEAD_HEIGHT]);
+			color("grey")cylinder(r = a[DIAMETER]/2, h = round(length));
 			
 		}
 		//make a socket for aesthetics
-		color("grey")translate([0,0,-lscrew_head_height-eta])
-			color("black")cylinder(r = lscrew_head_diameter/4, h = lscrew_head_height * 3/4, $fn = 6);
+		color("grey")translate([0,0,-a[CAP_HEAD_HEIGHT]-eta])
+			cylinder(r = a[CAP_HEAD_DIAMETER]/4, h = a[CAP_HEAD_HEIGHT] * 3/4, $fn = 6);
 	}
 	echo(str("--", type, "x", round(length))); 
 }
@@ -101,7 +80,7 @@ module set_screw(length, type){
 	echo(str("--", type, "x", round(length), " set screw")); 
 }
 
-module washer(type){
+module flat_washer(type){
 	lscrew_array = get_screw_dims(type);
 
 	lscrew_diameter = lscrew_array[0];
@@ -130,6 +109,9 @@ module all_thread(length, type){
 	}
 	echo(str("--", type, "x", round(length), "mm threaded rod")); 
 }
+
+
+
 
 module extruder_gear(type){
 	lextruder_gear_array = get_extruder_gear_dims(type);
