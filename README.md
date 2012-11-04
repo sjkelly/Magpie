@@ -8,7 +8,7 @@ Magpie is designed to be the bond between real world hardware components and des
 
 ##How to use!
 
-You can use Magpie in your designs by including the "magpie.scad" file. This will allow you to get started with all the tools in Magpie. For a while we recommend keeping the Magpie source with your projects, as the interfaces may change.
+You can use Magpie in your designs by including the "magpie.scad" file. This will allow you to get started with all the tools in Magpie. For a while we recommend keeping the Magpie source with your projects, as the interfaces may change. Documentation on the provided modules can be found in "MODULES.md".
 
 ##Contributing!
 
