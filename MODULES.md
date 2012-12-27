@@ -39,3 +39,9 @@ Create a threaded rod.
 ##Components
 	stepper(type)
 Create a stepper motor.
+
+##Utility Modules
+	polyCylinder(radius, height, center = false)
+Create a cylinder where radius is the apothem for accurate results on a 3D printer.
+	polyCircle(radius, center = false)
+Create a circle where radius is the apothem for accurate results on a 3D printer.

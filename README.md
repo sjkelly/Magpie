@@ -14,6 +14,10 @@ You can use Magpie in your designs by including the "magpie.scad" file. This wil
 
 Use GitHub to fork or send a pull request!
 
+##Thanks!
+
+Huge thanks to nophead and nathan7 for inspiration and ideas for this library. Much of the code is derived from their work. 
+
 ##Projects using Magpie!
 
 Magpie is being used in the RepRap Lewis. If you know of any cool projects using Magpie, let us know!

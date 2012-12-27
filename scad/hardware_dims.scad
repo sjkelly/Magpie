@@ -1,12 +1,12 @@
 //Screw Dimension arrays
-//[Diameter, Cap Head Height, Head Diameter, nut across flats, lock nut height, nut height, washer od, washer thick]
-m2 = [2, 2, 3.8, 4, 2.8, 1.6, 5, 0.3];
-m2_5 = [2.5, 2.5, 4.5, 5, 3.8, 2, 6, 0.5];
-m3 = [3, 3, 5.5, 5.5, 4, 2.4, 7, 0.6];
-m4 = [4, 4, 7, 7, 5, 3.2, 9, 0.9];
-m5 = [5, 5, 8.5, 8, 5, 4, 10, 1.1];
-m6 = [6, 6, 10, 10, 6, 5, 12.5, 1.8];
-m8 = [8, 8, 13, 13, 8, 6.5, 17, 1.8];
+//[Diameter, Cap Head Height, Head Diameter, nut across flats, lock nut height, nut height, washer od, washer thick, pan head diameter]
+m2 = [2, 2, 3.8, 4, 2.8, 1.6, 5, 0.3, 4];
+m2_5 = [2.5, 2.5, 4.5, 5, 3.8, 2, 6, 0.5, 5];
+m3 = [3, 3, 5.5, 5.5, 4, 2.4, 7, 0.6, 6];
+m4 = [4, 4, 7, 7, 5, 3.2, 9, 0.9, 8];
+m5 = [5, 5, 8.5, 8, 5, 4, 10, 1.1, 10];
+m6 = [6, 6, 10, 10, 6, 5, 12.5, 1.8, 12];
+m8 = [8, 8, 13, 13, 8, 6.5, 17, 1.8, 16];
 
 //stepper dimension arrays
 //[width, length, hole spacing, hole diameter, flange diameter, flange height, shaft length, shaft diameter]

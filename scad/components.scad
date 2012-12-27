@@ -34,6 +34,10 @@ module lockNut(type){
 	echo(str(MAGPIE_OUT, type," lock nut")); 
 }
 
+module lock_nut(type){
+	lockNut(type);
+}
+
 module stepper(type){
 	a = getStepperDims(type);
 
@@ -62,6 +66,10 @@ module capScrew(type,length){
 	echo(str(MAGPIE_OUT, type, "x", round(length), " cap screw")); 
 }
 
+module cap_screw(type, length){
+	capScrew(type,length);
+}
+
 module hexScrew(type,length){
 	a = getScrewDims(type);
 
@@ -73,6 +81,10 @@ module hexScrew(type,length){
 	}
 
 	echo(str(MAGPIE_OUT, type, "x", round(length), " hex screw")); 
+}
+
+module hex_screw(type, length){
+	hexScrew(type,length);
 }
 
 module setScrew(type,length){
@@ -89,6 +101,10 @@ module setScrew(type,length){
 	echo(str(MAGPIE_OUT, type, "x", round(length), " set screw")); 
 }
 
+module set_screw(type, length){
+	setScrew(type,length);
+}
+
 module flatWasher(type){
 	a = getScrewDims(type);
 
@@ -101,6 +117,10 @@ module flatWasher(type){
 	echo(str(MAGPIE_OUT, type," flat washer")); 
 }
 
+module flat_washer(type){
+	flatWasher(type);
+}
+
 module allThread(type, length){
 	a = getScrewDims(type);
 
@@ -111,6 +131,10 @@ module allThread(type, length){
 		}
 	}
 	echo(str(MAGPIE_OUT, type, "x", round(length), " threaded rod")); 
+}
+
+module all_thread(type,length){
+	allThread(type,length);
 }
 
 module extruderGear(type){
@@ -143,3 +167,6 @@ module ptfeRod(radius,length){
 	echo(str(MAGPIE_OUT,radius*2,"mm diameter ", round(length), "mm long PTFE rod")); 
 }
 
+module ptfe_rod(radius, length){
+	ptfeRod(radius, length);
+}

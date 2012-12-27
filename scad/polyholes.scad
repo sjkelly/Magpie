@@ -16,9 +16,17 @@ module polyCircle(r, center = false) {
     circle(r = correctedRadius(r,n), $fn = n, center = center);
 }
 
+module poly_circle(r, center = false) {
+	polyCircle(r, center);
+}
+
 module polyCylinder(r, h, center = false) {
     n = sides(r);
     cylinder(h = h, r = correctedRadius(r,n), $fn = n, center = center);
+}
+
+module poly_cylinder(r, h, center = false) {
+	polyCylinder(r,h,center);
 }
 
 module polydCylinder(r, center = false) {
@@ -27,4 +35,8 @@ module polydCylinder(r, center = false) {
     cylinder(h = h, r = r, $fn = n, center = center);
     translate([0, -r, 0])
         cube([r, 2 * r, h]);
+}
+
+module poly_d_cylinder(r, center = false) {
+	polydCylinder(r,center);
 }

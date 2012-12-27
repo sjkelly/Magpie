@@ -8,6 +8,8 @@ LOCK_NUT_HEIGHT = 4;
 NUT_HEIGHT = 5;
 WASHER_OD = 6;
 WASHER_HEIGHT = 7;
+PAN_HEAD_DIAMETER = 8;
+PAN_HEAD_HEIGHT = 5; //generally within 0.1mm of a nut height, so just use that
 
 //stepper
 WIDTH = 0;
