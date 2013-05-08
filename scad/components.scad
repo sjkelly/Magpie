@@ -5,8 +5,6 @@ include <functions.scad>
 include <materials.scad>
 
 $fn = 21;
-//make the local screw array a function
-
 
 module nut(type){
 	a = getScrewDims(type);

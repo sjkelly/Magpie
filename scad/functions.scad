@@ -16,3 +16,6 @@ function get_electronics_holes(electronics) = getElectronicsHoles(electronics);
 function getExtruderGearDims(extruderGear) = (extruderGear=="Arcol8x5") ? arcol8x5 : (extruderGear=="Arcol11x8") ? arcol11x8 : (extruderGear=="Arcol11x5") ? arcol11x5 : (extruderGear=="Arcol13x8") ? arcol13x8 : "error";
 
 function get_extruder_gear_dims(extruderGear) = getExtruderGearDims(extruderGear);
+
+function get_drive_roller_dims(roller) = (roller == "A_7T_5MUR1405") ? A_7T_5MUR1405 : (roller == "A_7T_5MUR1606") ? A_7T_5MUR1606 : (roller == "A_7T_5MUR1905") ? A_7T_5MUR1905 : (roller == "A_7T_5MUR1906") ? A_7T_5MUR1906 : (roller == "A_7T_5MUR2206") ? A_7T_5MUR2206 : (roller == "A_7T_5MUR2510") ? A_7T_5MUR2510 : (roller == "A_7T_5MUR3210") ? A_7T_5MUR3210 : (roller == "A_7T_5MUR3810") ? A_7T_5MUR3810 : (roller == "A_7T_5MUR3812") ? A_7T_5MUR3812 : (roller == "A_7T_5MUR4412") ? A_7T_5MUR4412 : (roller == "A_7T_5MUR5012") ? A_7T_5MUR5012 : (roller == "A_7M_5MUR1206A") ? A_7M_5MUR1206A : (roller == "A_7M_5MUR1206B") ? A_7M_5MUR1206B : "error";
+
