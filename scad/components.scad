@@ -7,7 +7,7 @@ include <materials.scad>
 $fn = 21;
 
 module nut(type){
-	a = getScrewDims(type);
+	a = object(type);
 
 	difference(type){
 		union(){
@@ -19,7 +19,7 @@ module nut(type){
 }
 
 module lockNut(type){
-	a = getScrewDims(type);
+	a = object(type);
 
 	difference(){
 		union(){
@@ -37,7 +37,7 @@ module lock_nut(type){
 }
 
 module stepper(type){
-	a = getStepperDims(type);
+	a = object(type);
 
 		union(){
 			steel()translate([0,0,a[LENGTH]/2])cube([a[WIDTH], a[WIDTH], a[LENGTH]], center = true);
@@ -48,7 +48,7 @@ module stepper(type){
 }
 
 module capScrew(type,length){
-	a = getScrewDims(type);
+	a = object(type);
 
 	difference(){
 		union(){
@@ -69,7 +69,7 @@ module cap_screw(type, length){
 }
 
 module hexScrew(type,length){
-	a = getScrewDims(type);
+	a = object(type);
 
 	union(){
 		steel()translate([0,0,-a[NUT_HEIGHT]])
@@ -86,7 +86,7 @@ module hex_screw(type, length){
 }
 
 module setScrew(type,length){
-	a = getScrewDims(type);
+	a = object(type);
 
 	difference(){
 		union(){
@@ -104,7 +104,7 @@ module set_screw(type, length){
 }
 
 module flatWasher(type){
-	a = getScrewDims(type);
+	a = object(type);
 
 	difference(){
 		union(){
@@ -120,7 +120,7 @@ module flat_washer(type){
 }
 
 module allThread(type, length){
-	a = getScrewDims(type);
+	a = object(type);
 
 	//don't round up on all thread
 	difference(){
@@ -136,7 +136,7 @@ module all_thread(type,length){
 }
 
 module extruderGear(type){
-	lextruder_gear_array = get_extruder_gear_dims(type);
+	lextruder_gear_array = object(type);
 
 	
 	lextruder_gear_od = lextruder_gear_array[0];
