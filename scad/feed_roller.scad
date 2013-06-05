@@ -1,13 +1,12 @@
 include <hardware_dims.scad>
-include <polyholes.scad>
+use <polyholes.scad>
 include <constants.scad>
-include <functions.scad>
-include <materials.scad>
+use <materials.scad>
 
 $fn = 21;
 
 module feed_roller(type){
-  a = get_drive_roller_dims(type);
+  a = object(type);
   //inside core
   difference(){
     union(){

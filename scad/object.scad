@@ -1,4 +1,4 @@
-include <hardware_dims.scad>
+include <hardware_dims.scad>;
 
 // Assign object array
 function object(object) = 
@@ -36,4 +36,4 @@ function object(object) =
 	(object == "A_7M_5MUR1206A") ? A_7M_5MUR1206A : 	
 	(object == "A_7M_5MUR1206B") ? A_7M_5MUR1206B : 
 	"error";
-	
+

@@ -1,5 +1,5 @@
 use <materials.scad>;
-use <components.scad>;
+
 $fn=100;
 //DC gearbox motor PGM-37DC12/77
 module gearMotor(type) translate([0,0,-1]){
@@ -27,7 +27,7 @@ module gearMotor(type) translate([0,0,-1]){
         if(holes)
         translate([7,0,7]) for(i=[0:5]) rotate(60*i) translate([0,31/2,0]){
             if(negative) translate([0,0,-1]) cylinder(r=3,h=1+13);
-            mirror([0,0,1]) cap_screw("M3",10);
+           // mirror([0,0,1]) cap_screw("M3",10);
         }
     }
 }

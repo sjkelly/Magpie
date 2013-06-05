@@ -1,4 +1,4 @@
-use <bom.scad>;
+
 use <materials.scad>;
 module tslot(h=10,bom=true,center=false){
     aluminium() linear_extrude(file="/usr/local/share/openscad/libraries/makerbeam.dxf",height=h,center=center);
