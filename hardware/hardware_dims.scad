@@ -60,3 +60,17 @@ A_7M_5MUR5010 = [50, 10, 17.47, 0, 34.92];
 A_7M_5MUR5012A = [50, 12, 19.05, 0, 34.92];	
 A_7M_5MUR5012B = [50, 12, 25.4, 0, 34.92];
 
+//linear bearings
+// [outside dia,length, inside dia]
+LM5UU = [10,15,5];
+LM6UU = [12,20,6];
+LM8UU = [15,24,8];
+LME8UU = [16,25,8];
+LM10UU = [19,29,10];
+LME12UU = [22,32,12];
+LM16UU = [28,37,16];
+LME20UU = [32,45,20];
+
+//bearings
+// [outside dia,length, inside dia]
+625zz = [16,5,5];

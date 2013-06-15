@@ -35,5 +35,14 @@ function object(object) =
 	(object == "A_7T_5MUR5012") ? A_7T_5MUR5012 : 
 	(object == "A_7M_5MUR1206A") ? A_7M_5MUR1206A : 	
 	(object == "A_7M_5MUR1206B") ? A_7M_5MUR1206B : 
+	(object == "LM5UU") ? LM5UU :
+	(object == "LM6UU") ? LM6UU :
+	(object == "LM8UU") ? LM8UU :
+	(object == "LME8UU") ? LME8UU :
+	(object == "LM10UU") ? LM10UU :
+	(object == "LME12UU") ? LME12UU :
+	(object == "LM16UU") ? LM16UU :
+	(object == "LME20UU") ? LME20UU :
+	(object == "625ZZ") ? 625zz :
 	"error";
 
