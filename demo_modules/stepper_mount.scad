@@ -3,6 +3,7 @@ include <../magpie.scad>;
 module stepper_mount(stepper,thickness,flangeWidth,holeDia){
 	if(flangeWidth<holeDia)echo("Invalid call to stepper_mount");
 	stepperObj = object(stepper);
+	translate([-stepperObj[LENGTH],-stepperObj[WIDTH]/2-thickness,0])
 	difference(){
 		union(){
 			cube([stepperObj[LENGTH]+thickness,stepperObj[WIDTH]+thickness*2,stepperObj[WIDTH]]);
@@ -29,9 +30,9 @@ module stepper_mount(stepper,thickness,flangeWidth,holeDia){
 module stepper_mount_asm(stepper,thickness,flangeWidth,holeDia){
 	stepper_mount(stepper,thickness,flangeWidth,holeDia);
 	stepperObj=object(stepper);
-	translate([0,stepperObj[WIDTH]/2+thickness,stepperObj[WIDTH]/2])rotate([0,90,0])stepper(stepper);
+	translate([-stepperObj[LENGTH],0,stepperObj[WIDTH]/2])rotate([0,90,0])stepper(stepper);
 	for(i = [-1,1])for(j = [-1,1])
-		translate([stepperObj[LENGTH]+thickness,stepperObj[WIDTH]/2+thickness+stepperObj[HOLE_SPACING]/2*j,stepperObj[WIDTH]/2-eta+stepperObj[HOLE_SPACING]/2*i]){
+		translate([thickness,stepperObj[HOLE_SPACING]/2*j,stepperObj[WIDTH]/2-eta+stepperObj[HOLE_SPACING]/2*i]){
 			rotate([0,90,0])flatWasher("M3");
 			translate([m3[WASHER_HEIGHT],0,0])rotate([0,-90,0])capScrew("M3",thickness+stepperObj[HOLE_DIAMETER]*1.5);
 			}

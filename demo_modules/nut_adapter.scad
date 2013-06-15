@@ -1,4 +1,4 @@
-include <../Magpie/magpie.scad>;
+include <../magpie.scad>;
 
 module nut_adapter(outer, inner){
 	a=getScrewDims(inner);
