@@ -1,13 +1,5 @@
 #Magpie Vitamins Modules
 
-##Usage notes
-###Accepted Hardware Types
-M2, M2.5, M3, M4, M5, M6, M8
-
-###Accepted Stepper Types
-NEMA8, NEMA11, NEMA14, NEMA17, Pololu35x26 
-
-
 ##Screw Object
 getScrewDims(screw)
 
