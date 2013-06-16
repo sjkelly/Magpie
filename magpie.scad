@@ -1,3 +1,3 @@
 include <hardware.scad>;
-include <magpie_demos.scad>;
+include <demos.scad>;
 include <shapes.scad>;
