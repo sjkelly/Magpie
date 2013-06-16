@@ -3,6 +3,7 @@ use <materials.scad>;
 include <object.scad>;
 
 module stepper(type){
+	$fn = 16;
 	a = object(type);
 
 		union(){

@@ -3,6 +3,7 @@ include <constants.scad>;
 use <materials.scad>;
 
 module nut(type){
+	$fn = 16;
 	a = object(type);
 
 	difference(type){
@@ -15,6 +16,7 @@ module nut(type){
 }
 
 module lockNut(type){
+	$fn = 16;
 	a = object(type);
 
 	difference(){

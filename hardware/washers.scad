@@ -3,6 +3,7 @@ include <constants.scad>;
 use <materials.scad>;
 
 module flatWasher(type){
+	$fn = 16;
 	a = object(type);
 
 	difference(){

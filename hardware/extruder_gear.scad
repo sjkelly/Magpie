@@ -1,6 +1,7 @@
 include <constants.scad>;
 
 module extruderGear(type){
+	$fn = 16;
 	lextruder_gear_array = object(type);
 
 	

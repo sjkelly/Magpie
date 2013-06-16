@@ -2,6 +2,7 @@ use <materials.scad>;
 include <constants.scad>;
 
 module allThread(type, length){
+	$fn = 16;
 	a = object(type);
 
 	//don't round up on all thread

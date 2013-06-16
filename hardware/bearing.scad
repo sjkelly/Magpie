@@ -3,6 +3,7 @@ include <object.scad>;
 use <materials.scad>;
 
 module bearing(type){
+	$fn = 16;
 	lb = object(type);
 	stainless()difference(){
 		cylinder(r=lb[OUTER_DIAMETER]/2, h=lb[LENGTH]);

@@ -3,6 +3,7 @@ include <object.scad>;
 use <materials.scad>;
 
 module capScrew(type,length){
+	$fn = 16;
 	a = object(type);
 
 	difference(){
@@ -24,6 +25,7 @@ module cap_screw(type, length){
 }
 
 module hexScrew(type,length){
+	$fn = 16;
 	a = object(type);
 
 	union(){
@@ -41,6 +43,7 @@ module hex_screw(type, length){
 }
 
 module setScrew(type,length){
+	$fn = 16;
 	a = object(type);
 
 	difference(){

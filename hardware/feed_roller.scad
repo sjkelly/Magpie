@@ -6,6 +6,7 @@ use <materials.scad>
 $fn = 21;
 
 module feed_roller(type){
+	$fn = 16;
   a = object(type);
   //inside core
   difference(){
