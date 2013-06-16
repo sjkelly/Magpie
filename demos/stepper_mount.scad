@@ -1,4 +1,4 @@
-include <../magpie.scad>;
+include <../hardware.scad>;
 
 module stepper_mount(stepper,thickness,flangeWidth,holeDia){
 	if(flangeWidth<holeDia)echo("Invalid call to stepper_mount");

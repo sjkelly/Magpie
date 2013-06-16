@@ -1,4 +1,4 @@
-use <./demo_modules/nut_adapter.scad>
-use <./demo_modules/stepper_mount.scad>
-use <./demo_modules/two_piece_coupler.scad>
-use <./demo_modules/nut_trap.scad>
+use <./demos/nut_adapter.scad>;
+use <./demos/stepper_mount.scad>;
+use <./demos/two_piece_coupler.scad>;
+use <./demos/nut_trap.scad>;
