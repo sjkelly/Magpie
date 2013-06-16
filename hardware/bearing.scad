@@ -10,3 +10,11 @@ module bearing(type){
 		translate([0,0,-eta])cylinder(r=lb[INNER_DIAMETER]/2, h=lb[LENGTH]+eta*2);
 	}	
 }
+
+module linear_bearing(type){
+	bearing(type);
+}
+
+module linearBearing(type){
+	bearing(type);
+}
