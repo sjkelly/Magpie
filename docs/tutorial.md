@@ -1,5 +1,5 @@
 #Magpie Introduction and Library Tutorial
-There have been many libraries written for OpenSCAD, however only the included MCAD library seems to have gained any traction. Libraries are powerful tools for encouraging code reuse and common standards. This is due in part to the difficult in adding libraries to OpenSCAD in past releases. With the upcoming 2013.06 release of OpenSCAD, library addition will become significantly easier. This tutorial will take you through the steps of adding libaries, and creating some demo parts with Magpie. Some prior knowledge of OpenSCAD is recommended.
+Libraries are powerful tools for encouraging code reuse and common standards, however adding libraries to OpenSCAD was difficult in past releases. With the upcoming 2013.06 release of OpenSCAD, library addition will become significantly easier. This tutorial will take you through the steps of adding libaries, and creating some demo parts with Magpie. Some prior knowledge of OpenSCAD is recommended.
 
 ##Adding a library
 With versions of OpenSCAD newer than 2013.06, adding libaries is very simple now. If you go to the "File" menu and select "Show Library Folder..." a file browser will appear to let you add your libraries.
