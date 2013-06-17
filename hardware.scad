@@ -10,7 +10,6 @@ use <./hardware/material.scad>;
 use <./hardware/materials.scad>;
 use <./hardware/nuts.scad>;
 include <./hardware/object.scad>;
-use <./hardware/polyholes.scad>;
 use <./hardware/rod.scad>;
 use <./hardware/screws.scad>;
 use <./hardware/stepper.scad>;
