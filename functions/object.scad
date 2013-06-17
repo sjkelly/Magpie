@@ -1,4 +1,5 @@
-include <hardware_dims.scad>;
+include <../hardware/dimensions.scad>;
+include <../electronics/dimensions.scad>;
 
 // Assign object array
 function object(object) = 
