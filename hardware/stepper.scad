@@ -1,6 +1,6 @@
 include <constants.scad>;
 use <materials.scad>;
-include <object.scad>;
+include <../functions.scad>;
 
 module stepper(type){
 	$fn = 16;

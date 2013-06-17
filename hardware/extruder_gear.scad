@@ -1,3 +1,4 @@
+include <../functions.scad>;
 include <constants.scad>;
 
 module extruderGear(type){

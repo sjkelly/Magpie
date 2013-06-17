@@ -1,5 +1,4 @@
-include <hardware_dims.scad>
-use <polyholes.scad>
+include <../functions.scad>;
 include <constants.scad>
 use <materials.scad>
 

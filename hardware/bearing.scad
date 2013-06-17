@@ -1,5 +1,5 @@
 include <constants.scad>;
-include <object.scad>;
+include <../functions.scad>;
 use <materials.scad>;
 
 module bearing(type){

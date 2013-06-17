@@ -1,4 +1,5 @@
 include <../hardware.scad>;
+include <../shapes.scad>;
 
 module nut_adapter(outer, inner){
 	a=getScrewDims(inner);

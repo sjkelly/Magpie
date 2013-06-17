@@ -1,4 +1,6 @@
 include <../hardware.scad>;
+include <../shapes.scad>;
+
 
 module nut_trap(type){
 	obj = object(type);

@@ -1,4 +1,6 @@
 include <../hardware.scad>;
+include <../shapes.scad>;
+
 
 module stepper_mount(stepper,thickness,flangeWidth,holeDia){
 	if(flangeWidth<holeDia)echo("Invalid call to stepper_mount");

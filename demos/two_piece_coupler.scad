@@ -1,4 +1,5 @@
 include <../hardware.scad>;
+include <../shapes.scad>;
 
 module two_piece_coupler(shaft1=5,shaft2=8,length1=10,length2=10,screw="M3",gap=2)
 {
