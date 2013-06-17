@@ -1,20 +1,20 @@
 //Screw Dimension arrays
 //[Diameter, Cap Head Height, Head Diameter, nut across flats, lock nut height, nut height, washer od, washer thick, pan head diameter]
 M2 = [2, 2, 3.8, 4, 2.8, 1.6, 5, 0.3, 4];
-m2_5 = [2.5, 2.5, 4.5, 5, 3.8, 2, 6, 0.5, 5];
-m3 = [3, 3, 5.5, 5.5, 4, 2.4, 7, 0.6, 6];
-m4 = [4, 4, 7, 7, 5, 3.2, 9, 0.9, 8];
-m5 = [5, 5, 8.5, 8, 5, 4, 10, 1.1, 10];
-m6 = [6, 6, 10, 10, 6, 5, 12.5, 1.8, 12];
-m8 = [8, 8, 13, 13, 8, 6.5, 17, 1.8, 16];
+M2_5 = [2.5, 2.5, 4.5, 5, 3.8, 2, 6, 0.5, 5];
+M3 = [3, 3, 5.5, 5.5, 4, 2.4, 7, 0.6, 6];
+M4 = [4, 4, 7, 7, 5, 3.2, 9, 0.9, 8];
+M5 = [5, 5, 8.5, 8, 5, 4, 10, 1.1, 10];
+M6 = [6, 6, 10, 10, 6, 5, 12.5, 1.8, 12];
+M8 = [8, 8, 13, 13, 8, 6.5, 17, 1.8, 16];
 
 //stepper dimension arrays
 //[width, length, hole spacing, hole diameter, flange diameter, flange height, shaft length, shaft diameter]
-nema8 = [20.3, 30, 16, 2, 15, 1.5, 14, 4];
-nema11 = [28.1, 27, 23, 2.5, 21, 2, 20, 5];
-nema14 = [35.2, 36, 26, 3, 22, 2, 21, 5];
-nema17 = [42.3, 48, 31, 3, 22, 2, 23, 5];
-pololu35x26 = [35.2, 26, 26, 3, 22, 2, 21, 5];
+NEMA8 = [20.3, 30, 16, 2, 15, 1.5, 14, 4];
+NEMA11 = [28.1, 27, 23, 2.5, 21, 2, 20, 5];
+NEMA14 = [35.2, 36, 26, 3, 22, 2, 21, 5];
+NEMA17 = [42.3, 48, 31, 3, 22, 2, 23, 5];
+Pololu35x26 = [35.2, 26, 26, 3, 22, 2, 21, 5];
 
 //extruder drive gear dimensions arrays
 //[outer diameter, length, inner diameter, hobb diameter, teeth diameter(torus inside to inside), teeth offset(from bottom)]

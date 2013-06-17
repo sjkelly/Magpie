@@ -3,18 +3,18 @@ include <../electronics/dimensions.scad>;
 
 // Assign object array
 function object(object) = 
-	(object=="M2") ? m2 : 
-	(object=="M2.5") ? m2_5 : 
-	(object=="M3") ? m3 : 
-	(object=="M4") ? m4 : 
-	(object=="M5") ? m5 : 
-	(object=="M6") ? m6 : 
-	(object=="M8") ? m8 : 
-	(object=="NEMA8") ? nema8 : 
-	(object=="NEMA11") ? nema11 : 
-	(object=="NEMA14") ? nema14 : 
-	(object=="NEMA17") ? nema17 : 
-	(object=="Pololu 35x26") ? pololu35x26 :
+	(object=="M2") ? M2 : 
+	(object=="M2.5") ? M2_5 : 
+	(object=="M3") ? M3 : 
+	(object=="M4") ? M4 : 
+	(object=="M5") ? M5 : 
+	(object=="M6") ? M6 : 
+	(object=="M8") ? M8 : 
+	(object=="NEMA8") ? NEMA8 : 
+	(object=="NEMA11") ? NEMA11 : 
+	(object=="NEMA14") ? NEMA14 : 
+	(object=="NEMA17") ? NEMA17 : 
+	(object=="Pololu 35x26") ? Pololu35x26 :
 	(object=="Melzi") ? melzi : 
 	(object=="Mega") ? mega : 
 	(object=="Printrboard") ? printrboard : 
