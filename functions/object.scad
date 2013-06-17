@@ -15,10 +15,11 @@ function object(object) =
 	(object=="NEMA14") ? NEMA14 : 
 	(object=="NEMA17") ? NEMA17 : 
 	(object=="Pololu 35x26") ? Pololu35x26 :
-	(object=="Melzi") ? melzi : 
-	(object=="Mega") ? mega : 
-	(object=="Printrboard") ? printrboard : 
-	(object=="Sanguinololu") ? sanguinololu :
+	// (object=="Melzi") ? melzi : 
+	// (object=="Mega") ? mega : 
+	// (object=="Printrboard") ? printrboard : 
+	// (object=="Sanguinololu") ? sanguinololu :
+	(object=="RAMBo") ? RAMBo :
 	(object=="Arcol8x5") ? arcol8x5 : 
 	(object=="Arcol11x8") ? arcol11x8 : 
 	(object=="Arcol11x5") ? arcol11x5 : 
