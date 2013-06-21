@@ -36,7 +36,7 @@ module stepper_mount_asm(stepper,thickness,flangeWidth,holeDia){
 	for(i = [-1,1])for(j = [-1,1])
 		translate([thickness,stepperObj[HOLE_SPACING]/2*j,stepperObj[WIDTH]/2-eta+stepperObj[HOLE_SPACING]/2*i]){
 			rotate([0,90,0])flatWasher("M3");
-			translate([m3[WASHER_HEIGHT],0,0])rotate([0,-90,0])capScrew("M3",thickness+stepperObj[HOLE_DIAMETER]*1.5);
+			translate([M3[WASHER_HEIGHT],0,0])rotate([0,-90,0])capScrew("M3",thickness+stepperObj[HOLE_DIAMETER]*1.5);
 			}
 				
 }
