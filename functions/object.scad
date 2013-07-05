@@ -46,5 +46,32 @@ function object(object) =
 	(object == "LM16UU") ? LM16UU :
 	(object == "LME20UU") ? LME20UU :
 	(object == "625ZZ") ? 625zz :
+	(object == "683ZZ") ? 683zz :
+	(object == "693ZZ") ? 693zz :
+	(object == "603ZZ") ? 603zz :
+	(object == "623ZZ") ? 623zz :
+	(object == "684ZZ") ? 684zz :
+	(object == "694ZZ") ? 694zz :
+	(object == "604ZZ") ? 604zz :
+	(object == "624ZZ") ? 624zz :
+	(object == "634ZZ") ? 634zz :
+	(object == "685ZZ") ? 685zz :
+	(object == "695ZZ") ? 695zz :
+	(object == "605ZZ") ? 605zz :
+	(object == "625ZZ") ? 625zz :
+	(object == "635ZZ") ? 635zz :
+	(object == "686ZZ") ? 686zz :
+	(object == "696ZZ") ? 696zz :
+	(object == "606ZZ") ? 606zz :
+	(object == "626ZZ") ? 626zz :
+	(object == "687ZZ") ? 687zz :
+	(object == "697ZZ") ? 697zz :
+	(object == "607ZZ") ? 607zz :
+	(object == "627ZZ") ? 627zz :
+	(object == "688ZZ") ? 688zz :
+	(object == "698ZZ") ? 698zz :
+	(object == "608ZZ") ? 608zz :
+	(object == "689ZZ") ? 689zz :
+	(object == "699ZZ") ? 699zz :
 	"error";
 
