@@ -15,6 +15,7 @@ function object(object) =
 	(object=="NEMA14") ? NEMA14 : 
 	(object=="NEMA17") ? NEMA17 : 
 	(object=="Pololu 35x26") ? Pololu35x26 :
+	(object=="NEMA17_TR8X8_210mm") ? NEMA17_TR8X8_210mm :
 	// (object=="Melzi") ? melzi : 
 	// (object=="Mega") ? mega : 
 	// (object=="Printrboard") ? printrboard : 

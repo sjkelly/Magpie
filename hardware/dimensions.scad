@@ -15,6 +15,7 @@ NEMA11 = [28.1, 27, 23, 2.5, 21, 2, 20, 5];
 NEMA14 = [35.2, 36, 26, 3, 22, 2, 21, 5];
 NEMA17 = [42.3, 48, 31, 3, 22, 2, 23, 5];
 Pololu35x26 = [35.2, 26, 26, 3, 22, 2, 21, 5];
+NEMA17_TR8X8_210mm = [42.3, 40, 31, 3, 22, 2, 210, 8];
 
 //extruder drive gear dimensions arrays
 //[outer diameter, length, inner diameter, hobb diameter, teeth diameter(torus inside to inside), teeth offset(from bottom)]
