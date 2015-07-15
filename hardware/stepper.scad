@@ -13,7 +13,7 @@ module stepper(type, diff=false, diff_length=10){
         if(diff){
             steel()translate([0,0,a[LENGTH]])cylinder(r=a[FLANGE_DIAMETER]/2, h = diff_length);
             for(i=[0:3]){
-                steel()rotate([0,0,90*i])translate([a[HOLE_SPACING]/2,a[HOLE_SPACING]/2,a[LENGTH]])polyCylinder(r=a[HOLE_DIAMETER]/2, h = diff_length);
+                steel()rotate([0,0,90*i])translate([a[HOLE_SPACING]/2,a[HOLE_SPACING]/2,a[LENGTH]-1])polyCylinder(r=a[HOLE_DIAMETER]/2, h = diff_length+1);
             }
         }
         else {
